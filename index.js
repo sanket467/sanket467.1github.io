@@ -1,5 +1,7 @@
 function clickOnExp(){
-alert("Experience");
+$('html,body').animate({
+    scrollTop: $("#exptab").offset().top},
+    'slow');
 }
 
 function clickOnEdu(){
@@ -8,4 +10,14 @@ function clickOnEdu(){
 
 function clickOnContact(){
     alert("Contact");
+}
+
+$("#experience").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#exptab").offset().top},
+        'slow');
+});
+
+function downloadCV(){
+    alert("Donwloaded");
 }
